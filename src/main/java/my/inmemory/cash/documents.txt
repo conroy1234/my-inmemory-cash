@@ -1,0 +1,40 @@
+Implement an in memory cache. The cache’s purpose is to allow the results of expensive or long running calculations or data retrievals to be stored in memory to avoid unnecessary duplication of effort.
+
+Please provide working Java code. Please provide enough context using standard techniques so that we can run your code easily. Please provide a single zip file containing everything you want to submit. We estimate that this should take around 1-2 hours of your time.
+
+The requirements are:
+The cache must provide a method to request the value for a key. 
+If the cache does not contain the requested data it should load it from an underlying data source, and then cache it for future requests.
+If the cache exceeds a set number of items in size then the least recently requested items should be removed.
+It should use generics so it can be instantiated for different types of keys and values.
+
+You should assume:
+There will be multiple calling threads requesting data.
+You do not need to implement the underlying calculation that produces the values. Your code should be implemented so that it can be provided with a way to run these calculations.
+The key is the only input to the calculation which produces the value. The same key will always produce the same value.
+Data source lookups / calculations may be slow.
+
+Any questions please document in a readme.txt detailing the assumptions you made to move forward. Also please comment on what you would do if there was more time beyond the allotted 1-2 hours.
+
+
+
+in the controller package there are end points annotated with each methods which can be used to test via api
+
+once start the main method the service can be reach at the following
+
+localhost:8080/api/customer/cashing/{key} -- key should be replace with the input values
+there are 6 values 
+1 customer1
+2 customer2
+3 customer3
+4 customer4
+5 customer5
+6 customer6
+the following can copy an past in a web browser once the application start 
+localhost:8080/api/customer/cashing/customer1 --  this will return all data relating to customer 1
+localhost:8080/api/customer/cashing/  --  will return all the data in the map
+localhost:8080/api/customer/cashing/removed  -- will return all values with the two first fields removed
+
+unit test can be found in the test backage
+
+

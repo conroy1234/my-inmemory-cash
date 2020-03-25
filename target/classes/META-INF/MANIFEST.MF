@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: my-inmemory-cash
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Owner
+Implementation-Vendor-Id: my-inmemory-cash
+Build-Jdk: 1.8.0_192
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/my-inmemory-cash
+Created-By: Maven Integration for Eclipse
+
